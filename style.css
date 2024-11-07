@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer utilities{
+  .tag{
+    @apply border-[#F44335] border rounded-full px-3 p-1 dark:text-white text-sm dark:border-green-300
+  }
+}
