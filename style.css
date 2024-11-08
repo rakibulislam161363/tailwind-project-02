@@ -7,4 +7,9 @@
   .tag{
     @apply border-[#F44335] border rounded-full px-3 p-1 dark:text-white text-sm dark:border-green-300
   }
+
+  .bars{
+
+    @apply right-4 transition-all delay-300
+  }
 }

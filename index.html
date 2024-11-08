@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark" id="htmlTag">
+<html lang="en" class="dark scroll-smooth" id="htmlTag" >
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,12 +33,33 @@
               d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
           </svg>
         </button>
+        <!--! aktu over try -->
+
+        <div class="md:hidden mt-2">
+          <button id="btn">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              class="size-7 dark:stroke-white">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+            </svg>
+          </button>
 
       </div>
+     
+    </div>
+    <!-- ! over try end -->
+      <nav class="md:hidden flex items-center absolute right-[-1000px] top-14 bg-orange-600 rounded-lg" id="navlink">
+        <ul class=" gap-5 flex-none dark:text-white cursor-pointer">
+          <li class="w-full hover:bg-gray-500 px-10">Home</li>
+          <li class="w-full hover:bg-gray-500 px-10">About Us</li>
+          <li class="text-black hover:bg-slate-500 px-10">Upskill</li>
+          <li class="w-full hover:bg-gray-500 px-10">Contactus</li>
+        </ul>
+      </nav>
+
+    <!--! hero section start -->
   </header>
   <!-- headeer end -->
-
-  <!--! hero section start -->
 
   <!-- this is a main section -->
   <section class="grid grid-cols-12 py-14 md:py-20 px-5 md:px-10 dark:bg-gray-900 bg-[#FAFAFA]">
@@ -487,7 +508,7 @@
       <p class="dark:text-white text-sm mt-2 mb-5 bottom-0">This course is designed to provide a full overview of computer networking. We’ll cover everything from the fundamentals
       of modern networking technologies and protocols to an overview of the cloud to practical applications and network
       troubleshooting.
-</p>
+     </p>
   
       <h1 class="text-[#F9CCC7] text-xl">What you will learn</h1>
   
@@ -873,12 +894,25 @@
         
 
     </footer>
-
+    <div class="relative">
     <div>
       <hr class="mt-10 dark:text-white">
       
       <p class="dark:text-white text-center mt-5 mb-10">Copyright 2022 Creatives For You LTD</p>
     </div>
+
+
+
+    <!-- ! over last section  -->
+     
+      <div class="absolute bottom-2 bg-green-500 py-2 px-2 right-3">
+       <a href="#htmlTag"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="size-5 dark:stroke-white text-white">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75 12 3m0 0 3.75 3.75M12 3v18" />
+      </svg></a>
+      
+      </div>
+     </div>
 
 
 
@@ -890,6 +924,26 @@
    change.addEventListener("click", function(){
     htmltag.classList.toggle("dark");
    });
+
+
+
+   const baton = document.getElementById("btn");
+   const navlink = document.getElementById("navlink");
+
+
+   baton.addEventListener("click", function(){
+
+
+    navlink.classList.toggle("bars");
+
+   });
+
+
+
+
+
+   
+
 
   </script>
   
